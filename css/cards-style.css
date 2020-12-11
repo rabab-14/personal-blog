@@ -1,0 +1,50 @@
+.post-cards {
+    grid-area: pc;
+    background: url('/imgs/posts.svg') center no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-columns: auto auto auto ; 
+}
+
+.pic {
+    height: 40%;
+    width: 100%;
+    
+}
+
+.post {
+    height: 80%;
+    width: 70%;
+    margin: 80px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: #ffe8e5;
+    text-align: center;
+    box-shadow: 7px 7px 5px 1px  rgba(112, 64, 64, 0.582);
+}
+
+h2 {
+    padding-top: 10px;
+    color: cadetblue;
+}
+
+.paragraph {
+    padding: 20px;
+}
+
+.btn-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    height: 30px;
+    width: 90px;
+    border-radius: 30px;
+    background: #ae838e; 
+    box-shadow: 0 7px 5px 1px  rgba(112, 64, 64, 0.582); 
+
+}
+
+.btn-link:hover {
+    background: cadetblue;
+    transition: .30s linear;
+}

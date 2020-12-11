@@ -1,0 +1,74 @@
+@import "/css/navbar-style.css" ;
+@import "/css/cards-style.css";
+@import "/css/footer-style.css";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+
+#container {
+    
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 70px 80px 600px 40px;
+    grid-template-areas: 
+    "nav"
+    "header"
+    "pc"
+    "ft";
+    
+}
+
+/* header*/
+
+.header {
+    grid-area: header;
+    padding: 20px;
+    background: cadetblue;
+    color: #ffffff;
+    text-align: center;  
+}
+
+/* footer*/
+
+
+
+
+@media screen and (max-width:900px) {
+    #container {
+        grid-template-rows: 70px 80px auto 40px;
+    }
+
+    .nav-links {
+        width: 60%;
+        justify-content: space-between;
+        font-size: 16px;
+        margin-left: 20%;
+    }
+    
+    .post-cards {
+        display: flex;
+        flex-direction: column;   
+    }
+
+    .post {
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+       
+    }
+
+    .paragraph {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .btn-link {
+        margin: 10px;
+    }
+}

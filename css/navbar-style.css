@@ -1,0 +1,22 @@
+.nav-bar {
+    grid-area: nav;
+    padding: 20px;
+    background: #ae838e;
+} 
+
+
+.nav-links {
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-around;
+    padding: 1px;
+    width: 30%;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}

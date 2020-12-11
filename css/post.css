@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 70vw 30vw;
+    grid-template-rows: 70px 70px auto 40px;
+    grid-template-areas: 
+    "nav nav"
+    "hd hd"
+    "cn sd"
+    "ft ft";
+}
+
+.nav-bar {
+    padding: 20px;
+    background: #ae838e;
+    grid-area: nav;
+} 
+
+.nav-links {
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 20px;  
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* header*/
+
+.header {
+    padding: 20px;
+    background: cadetblue;
+    color: rgb(252, 252, 252);
+    text-align: center;
+    grid-area: hd; 
+}
+
+/*content*/
+
+.content {
+    grid-area: cn;
+    text-align: left;
+    padding: 20px;
+    margin-top: 10%;
+    justify-self: left;
+    width: 70%;
+}
+
+.paragraph1 {
+    margin: 10px;
+    font-size: 16px;
+    color: cadetblue; 
+}
+
+.sharing {
+    font-size: 18px;
+    font-style: italic;  
+}
+/*aside*/
+
+.aside { 
+    grid-area: sd;
+    background: rgb(245, 244, 244);
+    border-radius: 10px;
+}
+
+.fa-user-circle {
+    width: 20%;
+    margin: auto;
+    margin-left: 40%;
+    margin-top: 40px;
+    
+}
+
+.info {
+    padding: 30px;
+    margin-left: 30%;
+    width: 40%;
+    
+    
+}
+
+
+.bio {
+    background: url('/imgs/short_bio.svg') center no-repeat #bd919c;
+    background-size: contain;
+    border-radius: 5px;
+    padding: 30px;
+    margin-left: 12%;
+    border: 1px solid;
+    color: rgb(13, 83, 85);
+    width: 80%;  
+}
+
+.text1 {
+    background: rgb(255, 255, 255);
+    word-wrap: break-word;
+}
+
+.form {
+    margin: 50px;
+}
+
+.social {
+   margin-left: 90px;
+}
+
+.text2 {
+    margin-bottom: 20%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.s-media {
+    padding: 20px;
+    margin: 10px;
+    width: 24px;
+    background-size: contain;
+}
+#twit {
+   
+    background: url(/imgs/iconmonstr-twitter-4.svg) no-repeat;
+}
+
+#linked {
+    background: url(/imgs/iconmonstr-linkedin-4.svg) no-repeat; 
+}
+
+#face {
+    background: url(/imgs/iconmonstr-facebook-4.svg)  no-repeat;  
+}
+
+.footer {
+    padding: 10px;
+    background: #ae838e;
+    text-align: center;
+    grid-area: ft;
+}
+
+
+@media screen and (max-width:900px) {
+    #container {
+        grid-template-columns: 100vw;
+        grid-template-rows: auto auto 80% auto 30px;
+        grid-template-areas: 
+        "nav"
+        "hd"
+        "cn"
+        "sd"
+        "ft";
+    }
+    
+    .nav-links {
+        width: 60%;
+        justify-content: space-between;
+        font-size: 16px;
+        margin-left: 20%;
+    }
+
+    .bio {
+        width: 70%;
+    }
+    .content {
+        text-align: center;
+        width: 100%;
+    }
+
+   .form {
+      margin-left: 100px;
+   }
+
+   .social {
+     margin: 20px 30%;
+   }
+
+}
